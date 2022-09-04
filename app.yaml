@@ -10,9 +10,6 @@ handlers:
 - url: /app/Config/*
   static_dir: Config
 # Serve a directory as a static resource.
-- url: /app/Controllers/*
-  static_dir: Controllers
-
   - url: /app/Database/*
   static_dir: Database
 

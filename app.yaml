@@ -4,4 +4,23 @@ runtime: php74
 # serve a custom PHP front controller (e.g. "serve backend/index.php") or to
 # run a long-running PHP script as a worker process (e.g. "php worker.php").
 #
-entrypoint: serve index.php
+#entrypoint: serve index.php
+handlers:
+# Serve a directory as a static resource.
+- url: /app/Config/*
+  static_dir: Config
+# Serve a directory as a static resource.
+- url: /app/Controllers/*
+  static_dir: Controllers
+
+  - url: /app/Database/*
+  static_dir: Database
+
+  - url: /app/Filters/*
+  static_dir: Filters
+
+  - url: /app/Helpers/*
+  static_dir: Helpers
+
+  - url: /app/Views/*
+  static_dir: Views

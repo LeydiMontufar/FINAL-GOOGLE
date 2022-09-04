@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <h2>holaaaa google</h2>
 <head>
     <meta charset="UTF-8">
     <title>Welcome to CodeIgniter 4!</title>

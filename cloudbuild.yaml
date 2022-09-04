@@ -1,9 +1,18 @@
 - name: gcr.io/cloud-builders/gcloud
   entrypoint: "bash"
+  availableSecrets:
+  secretManager:
+  - versionName: $_SETUP_URL_RESOURCE_ID
+    env: 'APP_SETUP_URL'
+  - versionName: $_SETUP_TOKEN_RESOURCE_ID
+    env: 'APP_SETUP_TOKEN'
+
   secretEnv: [ 'APP_SETUP_URL', 'APP_SETUP_TOKEN' ]
   args:
   -   "-c"
   - |
+
+  
     RESPONSE=$(curl -o /dev/null -s -w   "%{http_code}" \
         -d "APP_SETUP_TOKEN=$$APP_SETUP_TOKEN" \
         $_APP_BASE_URL/$$APP_SETUP_URL)
@@ -15,3 +24,4 @@
     else
       echo "PASS: migrations ran successfully"
     fi
+

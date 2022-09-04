@@ -5,9 +5,9 @@ runtime: php74
 # run a long-running PHP script as a worker process (e.g. "php worker.php").
 #
 #entrypoint: serve index.php
-handlers:
+
 # Serve a directory as a static resource.
-  -url:/
+  - url:/
   static_dir: index
   
   #-url:/app/Config/*

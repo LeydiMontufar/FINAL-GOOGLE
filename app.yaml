@@ -7,7 +7,7 @@ runtime: php74
 #entrypoint: serve index.php
 handlers:
 # Serve a directory as a static resource.
-  -url:/*
+  - url:/*
   static_dir: 
   
   -url:/app/Config/*

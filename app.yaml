@@ -4,4 +4,4 @@ handlers:
 
 
   - url: /.*
-  script: index.php
+script: index.php

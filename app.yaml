@@ -1,7 +1,10 @@
 runtime: php74
-handlers:
-# Serve a directory as a static resource.
 
-
-  - url: /.*
-script: index.php
+filter:
+  paths:
+      -app/Controllers/*
+      -app/Database/*
+      -app/Helpers/*
+      -app/Libraries/*
+      -app/Models/*
+      -app/Views/*

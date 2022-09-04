@@ -1,4 +1,6 @@
-application: root_folder
+runtime: php74
+
+application: FINAL-GOOGLE
 version: 1
 runtime: php
 api_version: 1

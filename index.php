@@ -1,67 +1,46 @@
-<?php
-
-// Check PHP version.
-$minPhpVersion = '7.4'; // If you update this, don't forget to update `spark`.
-if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
-    $message = sprintf(
-        'Your PHP version must be %s or higher to run CodeIgniter. Current version: %s',
-        $minPhpVersion,
-        PHP_VERSION
-    );
-
-    exit($message);
-}
-
-// Path to the front controller (this file)
-define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
-
-// Ensure the current directory is pointing to the front controller's directory
-chdir(FCPATH);
-
-/*
- *---------------------------------------------------------------
- * BOOTSTRAP THE APPLICATION
- *---------------------------------------------------------------
- * This process sets up the path constants, loads and registers
- * our autoloader, along with Composer's, loads our constants
- * and fires up an environment-specific bootstrapping.
- */
-
-// Load our paths config file
-// This is the line that might need to be changed, depending on your folder structure.
-require FCPATH . './app/Config/Paths.php';
-// ^^^ Change this line if you move your application folder
-
-$paths = new Config\Paths();
-
-// Location of the framework bootstrap file.
-require rtrim($paths->systemDirectory, '\\/ ') . DIRECTORY_SEPARATOR . 'bootstrap.php';
-
-// Load environment settings from .env files into $_SERVER and $_ENV
-require_once SYSTEMPATH . 'Config/DotEnv.php';
-(new CodeIgniter\Config\DotEnv(ROOTPATH))->load();
-
-/*
- * ---------------------------------------------------------------
- * GRAB OUR CODEIGNITER INSTANCE
- * ---------------------------------------------------------------
- *
- * The CodeIgniter class contains the core functionality to make
- * the application run, and does all of the dirty work to get
- * the pieces all working together.
- */
-
-$app = Config\Services::codeigniter();
-$app->initialize();
-$context = is_cli() ? 'php-cli' : 'web';
-$app->setContext($context);
-
-/*
- *---------------------------------------------------------------
- * LAUNCH THE APPLICATION
- *---------------------------------------------------------------
- * Now that everything is setup, it's time to actually fire
- * up the engines and make this app do its thang.
- */
-
-$app->run();
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  </body>
+</html>

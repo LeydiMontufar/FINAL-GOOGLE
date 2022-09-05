@@ -1,13 +1,7 @@
 runtime: php74
 
-handlers:
-# Serve a directory as a static resource.
-- url: /.*
-  script: index.php
-       
-- url: /app/.*
-  script: auto
-- url: /app/Controllers.* 
-  script: auto
-- url: /app/Views.*
-  script: auto
+REQUEST_URI: /
+#SCRIPT_FILENAME: /path/to/index.php
+SCRIPT_FILENAME: /app/controller/Home.php
+SCRIPT_NAME: /Home.php
+PHP_SELF: /Home.php

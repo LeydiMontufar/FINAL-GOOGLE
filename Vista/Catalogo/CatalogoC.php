@@ -26,7 +26,7 @@
             <img class="card-img-top" src="imagen/1.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting  longer.</p>
+              <p class="card-text">This is a longefffr card with supporting  longer.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               <a href="#" class="btn btn-primary">carrito</a>
               <a href="Vista/Producto/EditarProducto" class="btn btn-primary">Editar</a>

@@ -1,7 +1,2 @@
 runtime: php74
 
-REQUEST_URI: /
-#SCRIPT_FILENAME: /path/to/index.php
-SCRIPT_FILENAME: /app/controller/Home.php
-SCRIPT_NAME: /Home.php
-PHP_SELF: /Home.php

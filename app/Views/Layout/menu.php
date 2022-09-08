@@ -1,5 +1,4 @@
-<?= $this->extend('Layout/menu') ?>
-<?= $this->section('contenido') ?>
+
 <!doctype html>
 <html lang="es">
 
@@ -82,7 +81,7 @@
     <script src="<?= base_url('/app/assets/js/Login.js')?>"></script>
 
     
-<?= $this->endSection() ?>
+
 
 
 

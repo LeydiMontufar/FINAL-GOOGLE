@@ -24,10 +24,11 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/FINAL-GOOGLE/';
+    public $baseURL = 'https://tp-google.herokuapp.com/';
 
     /**
      * https://tp-google.herokuapp.com/
+     * http://localhost/FINAL-GOOGLE/
      * --------------------------------------------------------------------------
      * Index File
      * --------------------------------------------------------------------------

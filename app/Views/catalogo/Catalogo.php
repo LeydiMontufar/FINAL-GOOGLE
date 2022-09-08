@@ -32,7 +32,7 @@
                 <div class="menu-item bg-white shadow-on-hover">
                   <div class="col">
                     <div class="card h-100">
-                      <img src="/imagen/1.jpg" class="card-img-top" alt="...">
+                      <img src="/imagen/1.jpg" class="card-img-top" alt="<?php echo base_url();?>.../assets/images/1.jpg">
                         <div class="card-body">
                           <h5 class="card-title"><?php echo $item->nombreproducto?></h5>
                             <p class="card-text"><?php echo $item->detallesproducto?></p>
@@ -85,7 +85,7 @@
                             <div class="card h-100">
                                   <img src="/imagen/1.jpg" class="card-img-top" alt="...">
                                   <div class="card-body">
-                    <              <h5 class="card-title">mesa</h5>
+                    <              <h5 class="card-title"></h5>
                                     <p class="card-text">de madera</p>
                                     <p class="card-text">100</p>
                                     <p class="card-text">2</p>

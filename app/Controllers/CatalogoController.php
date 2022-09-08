@@ -53,10 +53,10 @@ class CatalogoController extends BaseController
         $respuesta= $Categoria->insertar($datos);
         
         if($respuesta>0){
-            return redirect()->to(base_url().'/crearproducto');
+            return redirect()->to(base_url().'/catalogo');
 
         }else{
-            return redirect()->to(base_url().'/crearusuario');
+            return redirect()->to(base_url().'/producto');
 
         }
         

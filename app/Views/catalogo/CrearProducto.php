@@ -1,4 +1,7 @@
-
+<?= $this->extend('Layout/menu') ?>
+<?= $this->section('contenido') ?>
+<br>
+<br>
 </body>
 </html>
 <!DOCTYPE html>
@@ -17,6 +20,7 @@
     />
   </head>
   <body class="bg-info bg-light d-flex justify-content-center align-items-center vh-100">
+  <form method="POST" action="<?php echo base_url() . '/crear/producto' ?>">
     <div
       class="bg-secondary.bg-gradient p-5 rounded-5 text-secondary shadow"
       style="width: 35rem"
@@ -49,7 +53,9 @@
                 <button class="btn btn-warning">Guardar</button>
             </div>
     </div>
+  </form>
   </body>
 </html>
 
 
+<?= $this->endSection() ?>

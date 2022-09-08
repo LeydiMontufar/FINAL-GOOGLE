@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class CatalogController extends BaseController
+class HomeController extends BaseController
 {
     public function index()
     {
-        return view('Layout/index');
+        return view('Home/Home');
     }
 }

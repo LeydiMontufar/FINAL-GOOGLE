@@ -1,4 +1,8 @@
+<?= $this->extend('Layout/menu') ?>
+<?= $this->section('contenido') ?>
 
+<br>
+<br>
 </body>
 </html>
 <!DOCTYPE html>
@@ -17,39 +21,40 @@
     />
   </head>
   <body class="bg-info bg-light d-flex justify-content-center align-items-center vh-100">
-    <div
-      class="bg-secondary.bg-gradient p-5 rounded-5 text-secondary shadow"
-      style="width: 25rem"
-    >
+  <form method="POST" action="<?php echo base_url() . '/Usuario/crear' ?>">
+    <div class="bg-secondary.bg-gradient p-5 rounded-5 text-secondary shadow" style="width: 25rem">
       <div class="text-center fs-1 fw-bold">Registro</div>
       <div class="input-group mt-4">
         <div class="input-group-text btn btn-dark">
         <label for="nombreSeccion">correo</label><br>
         </div>
-        <input class="form-control bg-light" type="text" placeholder="Correo"/>
+          <input class="form-control bg-light" type="text" placeholder="Correo" name="correo" id="correo"/>
       </div>
+
       <div class="input-group mt-1">
         <div class="input-group-text btn btn-dark">
         <label for="nombreSeccion">Contraseña</label><br>
         </div>
-        <input class="form-control bg-light" type="password" placeholder="Contraseña"/>
+        <input class="form-control bg-light" type="password" placeholder="Contraseña" name="contraseña" id="contraseña"/>
       </div>
+
       <div class="input-group mt-1">
         <div class="input-group-text btn btn-dark">
         <label for="nombreSeccion">Usuario</label>
         </div>
-        <div class="col-md-8">
-			<label for="usuario"></label>
-			<select class="form-control" id="usuario" name="usuario">
-			<option value="cliente">cliente</option>
+			  <label for="usuario"></label>
+          <select class="form-control" id="usuario" name="usuario">
+            <option value="cliente">cliente</option>
             <option value="administrador">adminitrador</option>
-            </select>
-		</div>
+          </select>
       </div>
+
       <div class="btn btn-dark text-white w-100 mt-4 fw-semibold shadow-sm">
         Resgistrar
       </div>
       </div>
     </div>
-  </body>
+</form>
+</body>
 </html>
+<?= $this->endSection() ?>

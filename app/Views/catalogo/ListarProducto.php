@@ -18,8 +18,7 @@
     />
   </head>
   <body class="bg-info bg-light d-flex justify-content-center align-items-center vh-100">
-    <div
-      class="bg-secondary.bg-gradient p-5 rounded-5 text-secondary shadow" style="width: 80rem">
+    <div class="bg-secondary.bg-gradient p-5 rounded-5 text-secondary shadow" style="width: 80rem">
       <div class="text-center fs-1 fw-bold">Lista de Producto</div>
       <div class="input-group mt-1">
        <div> 
@@ -27,22 +26,31 @@
             <li class="list-group-item" style="width: 5rem">ID</li>
             <li class="list-group-item" style="width: 11rem">NOMBRE</li>
             <li class="list-group-item" style="width: 25rem">DESCRIPCION</li>
-            <li class="list-group-item" style="width: 6rem">COSTO</li>
+            <li class="list-group-item" style="width: 6rem">PRECIO</li>
             <li class="list-group-item" style="width: 6rem">UNIDAD</li>
             <li class="list-group-item" style="width: 10rem">IMAGEN</li>
             <li class="list-group-item" style="width: 10rem">OPCION</li>
         </ul>
+
+        <?php foreach ($catalogo as $item): ?>
         <ul class="list-group list-group-horizontal">
             <li class="list-group-item" style="width: 5rem"></li>
-            <li class="list-group-item" style="width: 11rem"></li>
-            <li class="list-group-item" style="width: 25rem"></li>
-            <li class="list-group-item" style="width: 6rem"></li>
+            <li class="list-group-item" style="width: 11rem">
+              <h5 class="card-title"><?php echo $item->nombreproducto?></h5>
+            </li>
+            <li class="list-group-item" style="width: 25rem">
+              <p class="card-text"><?php echo $item->detallesproducto?></p>
+            </li>
+            <li class="list-group-item" style="width: 6rem">
+              <p class="card-text"><?php echo $item->precioproducto?></p>
+            </li>
             <li class="list-group-item" style="width: 6rem"></li>
             <li class="list-group-item" style="width: 10rem"></li>
             <li class="list-group-item" style="width: 10rem">
-                <button type="button" class="btn btn-outline-success href="Vista/home/indexa.php">Editar</button>
+                <button type="button" class="btn btn-outline-success href="<?php echo base_url() . '/editar/producto/'.$item->idproducto ?>">Editar</button>
             </li>
         </ul>
+        <?php endforeach ?>
     </div>
   </body>
 </html>

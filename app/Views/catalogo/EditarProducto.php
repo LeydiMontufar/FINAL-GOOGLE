@@ -1,4 +1,17 @@
+<?php 
+    $nombreproducto = $producto[0]['nombreproducto'];
+    $detalleproducto = $producto[0]['detallesproducto'];
+    $precioproducto = $producto[0]['precioproducto'];
+    $cantidadproducto = $producto[0]['cantidadproducto'];
+    $imagenproducto = $producto[0]['imagenproducto'];
 
+    $idproducto = $producto[0]['idproducto'];
+
+?>
+<?= $this->extend('Layout/menu') ?>
+<?= $this->section('contenido') ?>
+<br>
+<br>
 </body>
 </html>
 <!DOCTYPE html>
@@ -51,3 +64,4 @@
     </div>
   </body>
 </html>
+<?= $this->endSection() ?>

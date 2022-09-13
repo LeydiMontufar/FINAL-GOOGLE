@@ -88,6 +88,6 @@ class Database extends Config
         if (ENVIRONMENT === 'testing') {
             $this->defaultGroup = 'tests';
         }
-        $default['default']['options'] = array(PDO::ATTR_TIMEOUT => 5);
+        
     }
 }

@@ -32,10 +32,10 @@ class Database extends Config
      */
     public $default = [
         'DSN'      => '',
-        'hostname' => '',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'hostname' => '34.170.86.217',
+        'username' => 'root',
+        'password' => 'leydimontufar2021',
+        'database' => 'google',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -59,10 +59,10 @@ class Database extends Config
      */
     public $tests = [
         'DSN'         => '',
-        'hostname'    => '127.0.0.1',
-        'username'    => '',
-        'password'    => '',
-        'database'    => ':memory:',
+        'hostname'    => '34.170.86.217',
+        'username'    => 'root',
+        'password'    => 'leydimontufar2021',
+        'database'    => 'google',
         'DBDriver'    => 'SQLite3',
         'DBPrefix'    => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
         'pConnect'    => false,

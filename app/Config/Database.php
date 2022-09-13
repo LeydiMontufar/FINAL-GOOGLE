@@ -48,6 +48,7 @@ class Database extends Config
         'strictOn' => false,
         'failover' => [],
         'port'     => 3306,
+        
     ];
 
     /**
@@ -87,5 +88,6 @@ class Database extends Config
         if (ENVIRONMENT === 'testing') {
             $this->defaultGroup = 'tests';
         }
+        $default['default']['options'] = array(PDO::ATTR_TIMEOUT => 5);
     }
 }

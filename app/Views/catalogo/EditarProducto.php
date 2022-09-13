@@ -30,38 +30,43 @@
     />
   </head>
   <body class="bg-info bg-light d-flex justify-content-center align-items-center vh-100">
-    <div
-      class="bg-secondary.bg-gradient p-5 rounded-5 text-secondary shadow"
-      style="width: 35rem"
-    >
+  <form method="POST" action="<?php echo base_url() . '/actualizar/producto' ?>">
+    <div class="bg-secondary.bg-gradient p-5 rounded-5 text-secondary shadow"
+      style="width: 35rem">
       <div class="text-center fs-1 fw-bold">Editar Producto</div>
       <div class="input-group mt-1">
        <div> 
+            <div hidden>
+                <label for="nombreSeccion">id Producto</label>
+                <input type="text" name="idproducto"" id="idproducto" class="form-control" value="<?php echo $idproducto; ?>">
+            </div>
             <div>
+            
                 <label for="nombreSeccion">Nombre Producto</label>
-                <input type="text" name="nombreproducto"" id="nombreproducto" class="form-control">
+                <input type="text" name="nombreproducto"" id="nombreproducto" class="form-control" value="<?php echo $nombreproducto; ?>">
             </div>
             <div>
                 <label for="descripcion">Detaller Mueble</label>
-                <input type="text" name="detalleproducto" id="detalleproducto" class="form-control">
+                <input type="text" name="detalleproducto" id="detalleproducto" class="form-control" value="<?php echo $detalleproducto; ?>">
             </div>
             <div>
                 <label for="descripcion">Precio</label>
-                <input type="text" name="precioproducto" id="precioproducto" class="form-control">
+                <input type="text" name="precioproducto" id="precioproducto" class="form-control" value="<?php echo $precioproducto; ?>">
             </div>
             <div>
                 <label for="descripcion">Cantidad</label>
-                <input type="text" name="cantidadproducto" id="cantidadproducto" class="form-control">
+                <input type="text" name="cantidadproducto" id="cantidadproducto" class="form-control" value="<?php echo $cantidadproducto; ?>">
             </div>
             <div>
                 <label for="descripcion">imagen</label>
-                <input type="file" name="imagenproducto" id="imagenproducto" class="form-control">
+                <input type="file" name="imagenproducto" id="imagenproducto" class="form-control" value="<?php echo $imagenproducto; ?>">
             </div>
 
             <div>
                 <button class="btn btn-warning">Guardar</button>
             </div>
     </div>
+  </form>
   </body>
 </html>
 <?= $this->endSection() ?>

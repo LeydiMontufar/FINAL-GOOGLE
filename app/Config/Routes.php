@@ -51,7 +51,8 @@ $routes->get('/loginusuario', 'LoginController::index');
 $routes->post('/usuario/login', 'LoginController::Login');
 
 $routes->get('/catalogo', 'CatalogoController::index');
-$routes->get('/catalogo', 'CatalogoController::index');
+//listar producto
+$routes->get('/ListarProducto', 'CatalogoController::index');
 //crear producto
 $routes->get('/producto', 'CatalogoController::producto');
 $routes->post('/crear/producto', 'CatalogoController::crearproducto');

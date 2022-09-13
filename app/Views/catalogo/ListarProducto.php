@@ -1,4 +1,5 @@
-
+<?= $this->extend('Layout/menu') ?>
+<?= $this->section('contenido') ?>
 
 </body>
 </html>
@@ -54,3 +55,4 @@
     </div>
   </body>
 </html>
+<?= $this->endSection() ?>

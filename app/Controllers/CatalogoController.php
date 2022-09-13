@@ -81,7 +81,7 @@ class CatalogoController extends BaseController
             return redirect()->to(base_url().'/editar/producto/'.$idproducto);
 
         }else{
-            return redirect()->to(base_url().'/crearusuario');
+            return redirect()->to(base_url().'/catalogo');
 
         }
         

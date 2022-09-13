@@ -66,7 +66,11 @@
                         </a>
                         
                     </li>
-
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white" href="<?php echo base_url() ?>/producto">
+                            CREAR PRODUCTO
+                        </a>  
+                    </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

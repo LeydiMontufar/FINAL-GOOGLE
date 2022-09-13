@@ -44,7 +44,7 @@ class UsuarioController extends BaseController
             return redirect()->to(base_url().'/loginusuario');
 
         }else{
-            return redirect()->to(base_url().'/crearusuario');
+            return redirect()->to(base_url().'/catalogo');
 
         }
         
@@ -68,7 +68,7 @@ class UsuarioController extends BaseController
             return redirect()->to(base_url().'/editar/usuario/'.$idusuario);
 
         }else{
-            return redirect()->to(base_url().'/crearusuario');
+            return redirect()->to(base_url().'/catalogo');
 
         }
         

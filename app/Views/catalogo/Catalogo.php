@@ -28,17 +28,17 @@
            <div class="tab-pane fade show" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab" tabindex="0">
            <?php foreach ($catalogo as $item): ?>
             <div class="row gy-3">
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-5 col-sm-6">
                 <div class="menu-item bg-white shadow-on-hover">
                   <div class="col">
                     <div class="card h-100">
-                      <img src="/imagen/1.jpg" class="card-img-top" alt="<?php echo base_url();?>.../assets/images/1.jpg">
+                      <img src="<?php echo base_url();?>.../assets/images/1.jpg" class="card-img-top">
                         <div class="card-body">
                           <h5 class="card-title"><?php echo $item->nombreproducto?></h5>
                             <p class="card-text"><?php echo $item->detallesproducto?></p>
                             <p class="card-text"><?php echo $item->precioproducto?></p>
-                              <a href="#" class="btn btn-primary">carrito</a>
-                              <a href="<?php echo base_url() . '/editar/producto/'.$item->idproducto ?>" class="btn btn-primary">Ver Mas</a>
+                              <a href="#" class="btn btn-primary">-----</a>
+                              <a href="<?php echo base_url() . '/editar/producto/'.$item->idproducto ?>" class="btn btn-primary">Editar</a>
                         </div>
                       </div>
                     </div>
@@ -46,73 +46,7 @@
                 </div>
         <?php endforeach ?>
 
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="menu-item bg-white shadow-on-hover">
-                            <div class="card h-100">
-                                  <img src="/imagen/1.jpg" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                  <h5 class="card-title">mesa</h5>
-                                    <p class="card-text">de madera</p>
-                                    <p class="card-text">100</p>
-                                    <p class="card-text">2</p>
-                                    <a href="#" class="btn btn-primary">carrito</a>
-                                    <a href="Vista/Producto/EditarProducto" class="btn btn-primary">Ver Mas</a>
-                                  </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="menu-item bg-white shadow-on-hover">
-                            <div class="card h-100">
-                                  <img src="/imagen/1.jpg" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                  <h5 class="card-title">mesa</h5>
-                                    <p class="card-text">de madera</p>
-                                    <p class="card-text">100</p>
-                                    <p class="card-text">2</p>
-                                    <a href="#" class="btn btn-primary">carrito</a>
-                                    <a href="Vista/Producto/EditarProducto" class="btn btn-primary">Ver Mas</a>
-                                  </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="menu-item bg-white shadow-on-hover">
-                            <div class="card h-100">
-                                  <img src="/imagen/1.jpg" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                    <              <h5 class="card-title"></h5>
-                                    <p class="card-text">de madera</p>
-                                    <p class="card-text">100</p>
-                                    <p class="card-text">2</p>
-                                    <a href="#" class="btn btn-primary">carrito</a>
-                                    <a href="Vista/Producto/EditarProducto" class="btn btn-primary">Ver Mas</a>
-                                  </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="menu-item bg-white shadow-on-hover">
-                            <div class="card h-100">
-                                  <img src="/imagen/1.jpg" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                  <h5 class="card-title">mesa</h5>
-                                    <p class="card-text">de madera</p>
-                                    <p class="card-text">100</p>
-                                    <p class="card-text">2</p>
-                                    <a href="#" class="btn btn-primary">carrito</a>
-                                    <a href="Vista/Producto/EditarProducto" class="btn btn-primary">Ver Mas</a>
-                                  </div>
-                                </div>
-
-                            </div>
-                        </div>
+        
                         
 
                     </div>

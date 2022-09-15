@@ -14,7 +14,7 @@ class CatalogoController extends BaseController
             "catalogo" => $resultado
            
         ];
-        return view('Catalogo/Catalogo', $datos);
+        return view('catalogo/Catalogo', $datos);
     }
 
     public function editar($idproducto)
@@ -30,13 +30,13 @@ class CatalogoController extends BaseController
             "producto" => $resultado
            
         ];
-        return view('Catalogo/EditarProducto', $enviar);
+        return view('catalogo/EditarProducto', $enviar);
     }
 
 
     public function producto()
     {
-        return view('Catalogo/CrearProducto');
+        return view('catalogo/CrearProducto');
     }
     
     public function crearproducto()

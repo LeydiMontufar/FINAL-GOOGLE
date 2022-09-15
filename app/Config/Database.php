@@ -31,7 +31,7 @@ class Database extends Config
      * @var array
      */
     public $default = [
-        'DSN'      => 'sincere-axon-361915:us-central1:googletp',
+        'DSN'      => '',
         'hostname' => '34.170.86.217',
         'username' => 'root',
         'password' => 'leydimontufar2021',
@@ -58,12 +58,12 @@ class Database extends Config
      * @var array
      */
     public $tests = [
-        'DSN'         => 'sincere-axon-361915:us-central1:googletp',
-        'hostname'    => '34.170.86.217',
-        'username'    => 'root',
-        'password'    => 'leydimontufar2021',
-        'database'    => 'google',
-        'DBDriver'    => 'MySQLi',
+        'DSN'         => '',
+        'hostname'    => '',
+        'username'    => '',
+        'password'    => '',
+        'database'    => '',
+        'DBDriver'    => '',
         'DBPrefix'    => '',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
         'pConnect'    => false,
         'DBDebug'     => (ENVIRONMENT !== 'production'),

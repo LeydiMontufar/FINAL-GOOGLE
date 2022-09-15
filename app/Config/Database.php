@@ -31,10 +31,10 @@ class Database extends Config
      * @var array
      */
     public $default = [
-        'DSN'      => '',
-        'hostname' => '127.0.0.1',
+        'DSN'      => 'sincere-axon-361915:us-central1:googletp',
+        'hostname' => '34.170.86.217',
         'username' => 'root',
-        'password' => '',
+        'password' => 'leydimontufar2021',
         'database' => 'google',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
